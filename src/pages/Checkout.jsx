@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Header } from '../components';
-import { cart } from '../data';
 
 const Checkout = () => {
   return (
@@ -15,41 +14,85 @@ const Checkout = () => {
                 <Link to="/cart">Back to cart</Link>
               </div>
               <div style={{ marginBottom: '1rem' }}>
-                <h4>Checkout</h4>
-                <h6>pay for the things you are buying here</h6>
+                <h4
+                  style={{
+                    fontWeight: '700',
+                    fontSize: '20px',
+                    color: '#131D15',
+                  }}
+                >
+                  Checkout
+                </h4>
+                <h6
+                  style={{
+                    fontWeight: '500',
+                    fontSize: '20px',
+                    color: '#A1A1A1',
+                  }}
+                >
+                  pay for the things you are buying here
+                </h6>
               </div>
-              <form action="#" className="left-form">
+              <div className="left-form">
                 <h5 style={{ marginBottom: '2rem' }}>1. Contact Information</h5>
                 <div className="two-column">
-                  <div>
-                    <label htmlFor="name" className="left-label">
-                      First name
-                    </label>
-                    <input type="text" name="name" id="name" />
+                  <div className="text-box">
+                    <div>
+                      <label htmlFor="name" className="left-label">
+                        First name
+                      </label>
+                      <input
+                        type="text"
+                        name="name"
+                        id="name"
+                        className="left-input"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <label htmlFor="lname" className="left-label">
-                      Last name
-                    </label>
-                    <input type="text" name="lname" id="lname" />
+                  <div className="text-box">
+                    <div>
+                      <label htmlFor="lname" className="left-label">
+                        Last name
+                      </label>
+                      <input
+                        type="text"
+                        name="lname"
+                        id="lname"
+                        className="left-input"
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="two-column">
-                  <div>
-                    <label htmlFor="number" className="left-label">
-                      Phone Number
-                    </label>
-                    <input type="text" name="number" id="number" />
+                  <div className="text-box">
+                    <div>
+                      <label htmlFor="number" className="left-label">
+                        Phone Number
+                      </label>
+                      <input
+                        type="text"
+                        name="number"
+                        id="number"
+                        className="left-input"
+                      />
+                    </div>
                   </div>
-                  <div>
-                    <label htmlFor="email" className="left-label">
-                      Email Address
-                    </label>
-                    <input type="text" name="email" id="email" />
+                  <div className="text-box">
+                    <div>
+                      <label htmlFor="email" className="left-label">
+                        Email Address
+                      </label>
+                      <input
+                        type="text"
+                        name="email"
+                        id="email"
+                        className="left-input"
+                      />
+                    </div>
                   </div>
                 </div>
 
-                <h5>2. Delivery Method</h5>
+                <h5 style={{ marginBottom: '2rem' }}>2. Delivery Method</h5>
                 <div className="radio-container">
                   <div className="radio">
                     <input type="radio" />
@@ -64,7 +107,7 @@ const Checkout = () => {
                     <h6>Normal</h6>
                   </div>
                 </div>
-                <h5>3. Payment Method</h5>
+                <h5 style={{ marginBottom: '2rem' }}>3. Payment Method</h5>
                 <div className="radio-container">
                   <div className="radio">
                     <input type="radio" />
@@ -79,7 +122,7 @@ const Checkout = () => {
                     <h6>applepay</h6>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
 

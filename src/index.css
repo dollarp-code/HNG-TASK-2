@@ -6,21 +6,12 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll: smooth;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Satoshi', sans-serif;
 }
-/* main {
-  width: 100vw;
-  max-width: 1240px;
-  margin: 0 auto;
-  background-color: #fff;
-  font-family: 'Satoshi', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-} */
 
 .header {
   display: flex;
@@ -732,8 +723,11 @@ label {
 
 .radio-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 537px;
-  gap: 25px;
+  gap: 15px;
+  margin-bottom: 2rem;
 }
 
 .radio {
@@ -741,14 +735,43 @@ label {
   align-items: center;
   justify-content: center;
   width: 162px;
-  height: 47px;
+  /* height: 47px; */
   padding: 16px 24px 16px 24px;
   gap: 10px;
   border-radius: 10px;
   border: 1px solid #131d15;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18.9px;
+  text-align: center;
 }
 
 .left-form {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* margin: 0 auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.text-box {
+  width: 273px;
+  height: 45px;
+  /* padding: 13px 0px 13px 0px; */
+  /* gap: 26px; */
+  /* border: 0px 0px 1px 0px; */
+  /* opacity: 0px; */
+  /* border-bottom: 0.5px solid black; */
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #dcdcdc;
+}
+
+.left-input {
+  border: none;
+}
+
+input:focus {
+  border: none;
+  outline: none;
 }
