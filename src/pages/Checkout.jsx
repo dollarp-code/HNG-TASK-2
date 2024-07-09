@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-import { Header } from '../components';
+import { Header, Navbar } from '../components';
 
 const Checkout = () => {
   return (
     <div style={{ background: '#f6f6f5' }}>
+      <Header />
+      <Navbar />
       <section className="checkout">
-        <Header />
         <section className="checkout-container">
           <div className="checkout-container-left">
             <div className="check-contain">
@@ -288,7 +289,9 @@ const Checkout = () => {
                   </div>
                 </div>
               </form>
-              <button className="order-button">Proceed to Payment</button>
+              <Link to={'/payment'}>
+                <button className="order-button">Proceed to Payment</button>
+              </Link>
             </div>
             <div></div>
           </div>

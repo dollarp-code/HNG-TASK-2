@@ -11,6 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Satoshi', sans-serif;
+  width: 100%;
+  height: 100%;
 }
 
 .header {
@@ -33,16 +35,24 @@ body {
 
 /* Navbar section */
 
+nav {
+  background: #f3f3f3;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
   max-width: 72rem;
-  padding: 0 2rem;
-  height: 59px;
+  /* padding: 0 2rem; */
+  /* height: 59px; */
   margin: 0 auto;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 
 .nav-links {
@@ -50,8 +60,8 @@ body {
   align-items: center;
   /* justify-content: space-between; */
   list-style: none;
-  width: 434px;
-  height: 12px;
+  /* width: 434px; */
+  /* height: 12px; */
 }
 
 .nav-links li {
@@ -510,7 +520,7 @@ p {
 .footer-right h3 {
   margin-bottom: 15px;
 }
-li {
+.right-list li {
   margin-bottom: 15px;
 }
 
@@ -679,11 +689,12 @@ li {
 }
 
 .checkout-container-left {
-  width: 784px;
+  /* width: 784px; */
   /* height: 823px; */
   padding: 42px 54px 42px 54px;
   border-radius: 15px;
   background-color: #fff;
+  margin-bottom: 50px;
 }
 
 .check-contain {
@@ -967,3 +978,67 @@ input:focus {
 .product-card-info button {
   align-self: flex-start;
 } */
+
+/* Payment success */
+.Payment-success-container {
+  background-color: #131d15;
+  width: 1440px;
+  height: 100vh;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+}
+
+.payment-success-container-inner {
+  /* width: 100%; */
+  height: 100%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.success-container {
+  width: 400px;
+  height: 300px;
+  padding: 20px;
+  border-radius: 18px;
+  border: 3px solid #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  margin-top: 100px;
+}
+
+/* .circle {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.success-button {
+  width: 300px;
+  height: 60px;
+  padding: 16px 24px 16px 24px;
+  /* gap: 10px; */
+  border-radius: 50px;
+  background: #202020;
+  color: #fff;
+  transition: 0.3s all ease-in-out;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.success-button:hover {
+  background: transparent;
+  color: #000;
+  border: 1px solid #000;
+}

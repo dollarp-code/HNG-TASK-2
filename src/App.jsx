@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import { Cart, Checkout, Product, HomeLayout } from './pages/';
+import { Cart, Checkout, Product, HomeLayout, PaymentSuccess } from './pages/';
 
 const router = createBrowserRouter([
   {
@@ -17,6 +17,10 @@ const router = createBrowserRouter([
   {
     path: '/checkout',
     element: <Checkout />,
+  },
+  {
+    path: '/payment',
+    element: <PaymentSuccess />,
   },
 ]);
 function App() {

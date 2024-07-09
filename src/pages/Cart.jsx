@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { cart } from '../data';
 import { Link } from 'react-router-dom';
+import { Navbar } from '../components';
 
 const Cart = () => {
   const [cartItems, setCartitems] = useState(cart);
@@ -23,6 +24,7 @@ const Cart = () => {
     <>
       <div style={{ background: '#F6F6F5' }}>
         <Header />
+        <Navbar />
         <section className="cart-container">
           <div className="cart-container-left">
             <div className="shopping">

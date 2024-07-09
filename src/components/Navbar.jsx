@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <nav>
       <div className="navbar">
-        <Navlinks />
         <h2>VEECKER</h2>
+        <Navlinks />
         <div className="icons-container">
           <div className="icons">
             <Link
