@@ -22,7 +22,7 @@ const Checkout = () => {
                     gap: '10px',
                   }}
                 >
-                  <img src="\images\arrow-left.svg" alt="" />
+                  <img src="/images/arrow-left.svg" alt="" />
                   <h5>Back to cart</h5>
                 </Link>
               </div>
@@ -64,7 +64,7 @@ const Checkout = () => {
                           height: '20px',
                           paddingRight: '5px',
                         }}
-                        src="public\images\profile.svg.svg"
+                        src="/images/profile.svg.svg"
                         alt="profile"
                       />
                       <div>
@@ -95,7 +95,7 @@ const Checkout = () => {
                           height: '20px',
                           paddingRight: '5px',
                         }}
-                        src="public\images\profile.svg.svg"
+                        src="/images/profile.svg.svg"
                         alt="profile"
                       />
                       <div>

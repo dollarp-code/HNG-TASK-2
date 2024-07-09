@@ -121,7 +121,7 @@ const Cart = () => {
                             cursor: 'pointer',
                           }}
                         >
-                          <img src="public\images\trash.svg" alt="trash" />
+                          <img src="/images/trash.svg" alt="trash" />
                           <h6>Remove</h6>
                         </div>
                       </div>
