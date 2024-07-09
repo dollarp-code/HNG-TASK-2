@@ -8,7 +8,6 @@ const Footer = () => {
         </p>
         <button className="btn-showcase">See Catalogue</button>
       </div>
-      <img src="/images/image-13.png" className="float1" alt="floating chair" />
       <img src="/images/image-14.png" className="float2" alt="floating chair" />
       <img src="/images/image-15.png" className="float3" alt="floating chair" />
 
