@@ -122,6 +122,7 @@ svg:hover {
 
 .login:hover {
   background: transparent;
+  border: 1px solid black;
 }
 
 .category-container {
@@ -314,6 +315,7 @@ svg:hover {
 .btn-view:hover {
   background: transparent;
   color: #000;
+  border: 1px solid black;
 }
 
 .btn-showcase {
@@ -336,6 +338,7 @@ svg:hover {
 
 .btn-showcase:hover {
   background: transparent;
+  border: 1px solid black;
 }
 
 .footer {
@@ -378,7 +381,7 @@ p {
 
 .float1 {
   top: -100px;
-  right: -34px;
+  right: -0.1px;
 }
 
 .float2 {
@@ -387,8 +390,8 @@ p {
 }
 
 .float3 {
-  top: 140px;
-  left: -45px;
+  top: 150px;
+  left: -20px;
 }
 
 .footer-container {
@@ -449,6 +452,9 @@ p {
   justify-content: space-between;
   gap: 25px;
   margin-top: 20px;
+}
+.footer-social:hover {
+  cursor: pointer;
 }
 
 .copyright {
@@ -804,11 +810,12 @@ input:focus {
 }
 
 /* Product section */
-/* .container {
-  padding: 20px;
+.container {
+  /* padding: 20px; */
+  max-width: 72rem;
 }
 
-.back-link {
+/* .back-link {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
