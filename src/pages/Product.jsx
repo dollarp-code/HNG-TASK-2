@@ -6,7 +6,9 @@ const Product = () => {
     <div>
       <Header />
       <Navbar />
-
+      <h1 style={{ textAlign: 'center', margin: '50px auto' }}>
+        UNDER CONSTRUCTION
+      </h1>
       <Footer />
     </div>
   );
