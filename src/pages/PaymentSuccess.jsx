@@ -15,7 +15,7 @@ const PaymentSuccess = () => {
             }}
           >
             <h2 style={{ marginBottom: '20px' }}>Payment Success</h2>
-            <img src="public\images\Vector.svg" alt="success" />
+            <img src="/images/Vector.svg" alt="success" />
           </div>
           <Link to={'/'}>
             <button className="success-button">Go Home</button>

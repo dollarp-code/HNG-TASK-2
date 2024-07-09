@@ -374,7 +374,6 @@ p {
   text-align: center;
 }
 
-.float1,
 .float2,
 .float3 {
   position: absolute;
@@ -393,7 +392,7 @@ p {
 .footer-container {
   width: 95%;
   height: 444px;
-  bottom: 500px;
+  bottom: 50px;
   margin: 0 auto;
   position: absolute;
   background-color: #fff;

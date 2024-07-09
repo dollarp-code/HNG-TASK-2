@@ -163,7 +163,7 @@ const Checkout = () => {
                           height: '20px',
                           paddingRight: '5px',
                         }}
-                        src="public\images\send-2.svg"
+                        src="/images/send-2.svg"
                         alt="profile"
                       />
                       <div>
