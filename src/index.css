@@ -457,7 +457,7 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 25px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 .footer-social:hover {
   cursor: pointer;
@@ -514,7 +514,7 @@ p {
   margin-bottom: 15px;
 }
 .right-list li {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 /* Cart Styles */
