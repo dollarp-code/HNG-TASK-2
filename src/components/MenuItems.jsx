@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const MenuItems = ({ id, title, desc, price, reviews, image }) => {
   return (
     <article className="menu-container">
@@ -20,14 +21,21 @@ const MenuItems = ({ id, title, desc, price, reviews, image }) => {
       <div>
         <div className="desc-container">
           <h5 className="title">{title}</h5>
-          <span className="review">{reviews}</span>
+          <span className="review">
+            <span style={{ color: '#FFD700' }}>
+              &#9733;&#9733;&#9733;&#9733;&#9733;
+            </span>
+            {reviews}
+          </span>
           <p className="text">{desc}</p>
           <div className="price-container">
             <div>
               <h5 className="price">price</h5>
               <span className="d-price">${price}.00</span>
             </div>
-            <button className="btn-view">View Details</button>
+            <Link to="/product">
+              <button className="btn-view">View Details</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -11,7 +11,19 @@ const Checkout = () => {
             <div className="check-contain">
               <div style={{ marginBottom: '3rem' }}>
                 {/* <a href="#">Back to cart</a> */}
-                <Link to="/cart">Back to cart</Link>
+                <Link
+                  to="/cart"
+                  style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    textDecoration: 'none',
+                    color: '#000',
+                    gap: '10px',
+                  }}
+                >
+                  <img src="\images\arrow-left.svg" alt="" />
+                  <h5>Back to cart</h5>
+                </Link>
               </div>
               <div style={{ marginBottom: '1rem' }}>
                 <h4
@@ -37,57 +49,133 @@ const Checkout = () => {
                 <h5 style={{ marginBottom: '2rem' }}>1. Contact Information</h5>
                 <div className="two-column">
                   <div className="text-box">
-                    <div>
-                      <label htmlFor="name" className="left-label">
-                        First name
-                      </label>
-                      <input
-                        type="text"
-                        name="name"
-                        id="name"
-                        className="left-input"
+                    <div
+                      style={{
+                        display: 'flex',
+                        gap: '15px',
+                        alignItems: 'center',
+                        justifyContent: 'flex-start',
+                      }}
+                    >
+                      <img
+                        style={{
+                          borderRight: '1px solid #dcdcdc',
+                          height: '20px',
+                          paddingRight: '5px',
+                        }}
+                        src="public\images\profile.svg.svg"
+                        alt="profile"
                       />
+                      <div>
+                        <label htmlFor="name" className="left-label">
+                          First name
+                        </label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          className="left-input"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="text-box">
-                    <div>
-                      <label htmlFor="lname" className="left-label">
-                        Last name
-                      </label>
-                      <input
-                        type="text"
-                        name="lname"
-                        id="lname"
-                        className="left-input"
+                    <div
+                      style={{
+                        display: 'flex',
+                        gap: '15px',
+                        alignItems: 'center',
+                        justifyContent: 'flex-start',
+                      }}
+                    >
+                      <img
+                        style={{
+                          borderRight: '1px solid #dcdcdc',
+                          height: '20px',
+                          paddingRight: '5px',
+                        }}
+                        src="public\images\profile.svg.svg"
+                        alt="profile"
                       />
+                      <div>
+                        <label htmlFor="lname" className="left-label">
+                          Last name
+                        </label>
+                        <input
+                          type="text"
+                          name="lname"
+                          id="lname"
+                          className="left-input"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div className="two-column">
                   <div className="text-box">
-                    <div>
-                      <label htmlFor="number" className="left-label">
-                        Phone Number
-                      </label>
-                      <input
-                        type="text"
-                        name="number"
-                        id="number"
-                        className="left-input"
-                      />
+                    <div
+                      style={{
+                        display: 'flex',
+                        gap: '15px',
+                        alignItems: 'center',
+                        justifyContent: 'flex-start',
+                      }}
+                    >
+                      <select
+                        name="select"
+                        id="select"
+                        style={{
+                          border: 'none',
+                          borderRight: '1px solid #dcdcdc',
+                          height: '20px',
+                          paddingRight: '5px',
+                          width: '60px',
+                        }}
+                      >
+                        <option value="">+234</option>
+                      </select>
+                      <div>
+                        <label htmlFor="number" className="left-label">
+                          Phone Number
+                        </label>
+                        <input
+                          type="text"
+                          name="number"
+                          id="number"
+                          className="left-input"
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className="text-box">
-                    <div>
-                      <label htmlFor="email" className="left-label">
-                        Email Address
-                      </label>
-                      <input
-                        type="text"
-                        name="email"
-                        id="email"
-                        className="left-input"
+                    <div
+                      style={{
+                        display: 'flex',
+                        gap: '15px',
+                        alignItems: 'center',
+                        justifyContent: 'flex-start',
+                      }}
+                    >
+                      <img
+                        style={{
+                          borderRight: '1px solid #dcdcdc',
+                          height: '20px',
+                          paddingRight: '5px',
+                        }}
+                        src="public\images\send-2.svg"
+                        alt="profile"
                       />
+                      <div>
+                        <label htmlFor="email" className="left-label">
+                          Email Address
+                        </label>
+                        <input
+                          type="text"
+                          name="email"
+                          id="email"
+                          className="left-input"
+                        />
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -111,7 +199,8 @@ const Checkout = () => {
                 <div className="radio-container">
                   <div className="radio">
                     <input type="radio" />
-                    <h6>Gpay</h6>
+                    <img src="\images\google.svg.svg" alt="google" />
+                    <h6>pay</h6>
                   </div>
                   <div className="radio">
                     <input type="radio" />
@@ -119,7 +208,8 @@ const Checkout = () => {
                   </div>
                   <div className="radio">
                     <input type="radio" />
-                    <h6>applepay</h6>
+                    <img src="\images\apple.svg.svg" alt="apple" />
+                    <h6>pay</h6>
                   </div>
                 </div>
               </div>
