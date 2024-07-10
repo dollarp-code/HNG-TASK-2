@@ -5,7 +5,7 @@ const HomeLayout = () => {
     <>
       <Header />
       <Navbar />
-      <Category />
+      {/* <Category /> */}
       <Showcase menu={menu} />
       <Footer />
     </>
