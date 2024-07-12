@@ -22,7 +22,7 @@ const Cart = () => {
 
   return (
     <>
-      <div style={{ background: '#F6F6F5' }}>
+      <div style={{ background: '#F6F6F5', width: '100vw' }}>
         <Header />
         <Navbar />
         <section className="cart-container">

@@ -3,14 +3,14 @@ import { Footer, Header, Navbar } from '../components';
 
 const Checkout = () => {
   return (
-    <div style={{ background: '#f6f6f5' }}>
+    <div className="bg-[#f6f6f5] w-screen">
       <Header />
       <Navbar />
       <section className="checkout">
         <section className="checkout-container">
           <div className="checkout-container-left">
             <div className="check-contain">
-              <div style={{ marginBottom: '3rem' }}>
+              <div className="mb-12">
                 {/* <a href="#">Back to cart</a> */}
                 <Link
                   to="/cart"
@@ -26,7 +26,7 @@ const Checkout = () => {
                   <h5>Back to cart</h5>
                 </Link>
               </div>
-              <div style={{ marginBottom: '1rem' }}>
+              <div className="mb-4">
                 <h4
                   style={{
                     fontWeight: '700',
