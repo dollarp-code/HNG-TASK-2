@@ -1,5 +1,6 @@
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { Cart, Checkout, Product, HomeLayout, PaymentSuccess } from './pages/';
+import { useState, useEffect } from 'react';
 
 const router = createBrowserRouter([
   {

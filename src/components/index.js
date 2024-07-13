@@ -5,3 +5,4 @@ export { default as MenuItems } from './MenuItems';
 export { default as Showcase } from './Showcase';
 export { default as Category } from './Category';
 export { default as Footer } from './Footer';
+export { default as ProductList } from './ProductList';

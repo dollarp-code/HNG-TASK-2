@@ -1,8 +1,16 @@
-import { Category, Footer, Header, Navbar, Showcase } from '../components';
+import {
+  Category,
+  Footer,
+  Header,
+  Navbar,
+  ProductList,
+  Showcase,
+} from '../components';
 import menu from '../data';
 const HomeLayout = () => {
   return (
     <>
+      <ProductList />
       <Header />
       <Navbar />
       {/* <Category /> */}
