@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import MenuItems from './MenuItems';
 import Category from './Category';
-// import { Card, Image, Text, Group, Loader, Container, Title, Badge, Button, Center } from '@mantine/core';
 
 const fetchProducts = async (page) => {
   const response = await axios.get(

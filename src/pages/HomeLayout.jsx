@@ -13,7 +13,6 @@ const HomeLayout = () => {
       <Header />
       <Navbar />
       <ProductList />
-      {/* <Showcase menu={menu} /> */}
       <Footer />
     </>
   );
