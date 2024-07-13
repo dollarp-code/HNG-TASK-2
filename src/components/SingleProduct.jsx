@@ -67,9 +67,11 @@ const SingleProduct = () => {
             </h6>
             <div className="flex items-center justify-between w-[472px] mt-5">
               <h2 className="text-4xl font-bold text-[#131D15]">$260.00</h2>
-              <button className="px-6 py-4 bg-[#202020] text-white text-center text-sm font-medium rounded-[50px] hover:bg-transparent hover:text-black hover:border">
-                Add to Cart
-              </button>
+              <Link to={'/cart'}>
+                <button className="px-6 py-4 bg-[#202020] text-white text-center text-sm font-medium rounded-[50px] hover:bg-transparent hover:text-black hover:border">
+                  Add to Cart
+                </button>
+              </Link>
             </div>
             <div className="w-[535px] h-[409px] pt-10 pb-4 mt-20 border-b border-b-[#DCDCDC]">
               <div className="p-[10px] flex items-center h-14 text-base font-medium text-black bg-[#EDF2EE] rounded-[30px] mb-6">
