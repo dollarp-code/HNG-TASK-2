@@ -10,11 +10,10 @@ import menu from '../data';
 const HomeLayout = () => {
   return (
     <>
-      <ProductList />
       <Header />
       <Navbar />
-      {/* <Category /> */}
-      <Showcase menu={menu} />
+      <ProductList />
+      {/* <Showcase menu={menu} /> */}
       <Footer />
     </>
   );

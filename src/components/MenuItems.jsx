@@ -1,8 +1,15 @@
 import { Link } from 'react-router-dom';
-const MenuItems = ({ id, title, desc, price, reviews, image }) => {
+const MenuItems = ({ product }) => {
   return (
     <article className="menu-container">
-      <img src={image} alt={title} />
+      <img
+        src={
+          product.photos[0] !== undefined
+            ? `https://api.timbu.cloud/images/${product.photos[0].url}`
+            : ''
+        }
+        alt={product.name}
+      />
       <span className="love-icon">
         <svg
           width="41"
@@ -20,18 +27,20 @@ const MenuItems = ({ id, title, desc, price, reviews, image }) => {
       <div className="line"></div>
       <div>
         <div className="desc-container">
-          <h5 className="title">{title}</h5>
+          <h5 className="title">{product.name}</h5>
           <span className="review">
             <span style={{ color: '#FFD700' }}>
               &#9733;&#9733;&#9733;&#9733;&#9733;
             </span>
-            {reviews}
+            10k+ Reviews
           </span>
-          <p className="text">{desc}</p>
+          <p className="text">{product?.description}</p>
           <div className="price-container">
             <div>
               <h5 className="price">price</h5>
-              <span className="d-price">${price}.00</span>
+              <span className="d-price">
+                ${product?.current_price[0]?.USD[0]}.00
+              </span>
             </div>
             <Link to="/product">
               <button className="btn-view">View Details</button>
